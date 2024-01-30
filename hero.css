@@ -1,0 +1,105 @@
+body{
+	height: 100vh;
+	background-color: ;
+}
+.mainHero{
+	width: 100vw;
+	height: 20%(width);
+	background-color: #F3EEE9;
+ text-align: center;
+}
+.product{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	gap: 100px;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	}
+	
+
+	
+ .box{
+ 	width: 200px;
+	 height: 250px;
+	 background-color: lightblue;
+	 border-radius: 20px;
+	 box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, .1);
+	 cursor: pointer;
+}
+.product .b1{
+	 background-image: url('p8.jpg');
+	 background-size: cover;
+	 background-position: center;
+}
+.product .b2{
+	 background-image: url('watch.jpg');
+	 background-size: cover;
+	 background-position: center;
+}
+
+.product .b3{
+	 background-image: url('buds.jpg');
+	 background-size: cover;
+	 background-position: center;
+}
+
+.product .b4{
+	 background-image: url('camera.jpg');
+	 background-size: cover;
+	 background-position: center;
+}
+
+.product .b5{
+	 background-image: url('alexa.jpg');
+	 background-size: cover;
+	 background-position: center;
+}
+
+.heading h3{
+	color: #3E4244;
+	font-size: 50px;
+}
+.heading{
+	margin-top: 50px;
+	text-align: center;
+}
+
+.productName{
+	   position: relative;
+	   top: 270px;
+	   font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+	 
+/*     ###     Responsive for Smartphone     ###   */
+@media (Max-width: 800px){
+	 
+ 	  .slider .product{
+ 	  	flex-wrap: wrap;
+	    margin-top: 50px;
+	    gap: 50px;
+	    
+	    } 
+	   
+	  	.box{
+    	width: 100px;
+    	height: 125px;
+	   }
+	   .productName{
+	   position: relative;
+	   top: 135px;
+	   font-size: 1rem;
+   }
+	   .heading h3{
+	   font-size: 30px;
+	   }
+}

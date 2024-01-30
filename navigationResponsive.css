@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Arimo:ital,wght@1,500&family=Cormorant:ital@1&family=Dancing+Script:wght@600&family=Poppins:ital,wght@0,500;1,400&family=Rubik+Glitch+Pop&display=swap');
+*{
+	 padding: 0;
+	 margin: 0;
+  font-family: 'Afacad', sans-serif; 
+}
+nav{
+	 height: 3.5rem;
+	 background: white;
+	 padding: 0 20px;
+	 gap: 20px;
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+}
+
+/* DESIGN FOR RIGHT NAV BOX ~~ BAR AND GOGGLE LOGO */
+.leftNavBox{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 20px;
+}
+
+div .fa-solid{
+	 font-size: 1.5rem;
+	 color: #878A8E;
+	 cursor: pointer;
+}
+div .fa-solid:hover{
+	color: black;
+	cursor: pointer;
+}
+div .Gnav{
+	  width: 1.5rem;
+}
+
+/* DESIGN FOR RIGHT SIDE NAV BOX ~~ ICONS */
+.rightNavBox{
+	 display: flex;
+	 align-items: center;
+ 	text-align: center;
+ 	gap: 20px;
+}
+
+
+	
+/* DESIGN FOR LIST ITEMS THAT APEAR WHEN TAP BAR ICONS*/
+ul li{
+	font-size: 1.3rem;
+	color: #3E4244;
+	padding: 10px 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+		}
+		
+	ul div{
+	font-size: 1.2rem;
+	color: #878A8E;
+	padding: 1.5rem 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	}
+	
+ul	.order{
+	 border-top: solid 1px #aaaaaa;
+	 cursor: pointer;
+}
+
+ul li:hover{
+	background-color: #FAFAFA;
+}
+ul div:hover{
+	background-color: #FAFAFA;
+}
+
+/* BAR ICONS IMG CODE*/
+
+ul img{
+	 width: 2.5rem;
+}
+.orderHelp{
+	  width: 1.5rem;
+	  cursor: pointer;
+}
+
+
+  ul{
+    	position: fixed;
+    	top: 3.5rem;
+     left: -100%;
+     width: 100%;
+     background-color: white;
+     text-align: left;
+     }
+ 
+#C{
+	display: none;
+}
+
+
+	   
+	   #C:checked ~ ul{
+	   	position: fixed;
+	   	left: 0%;
+	   }
+  
+
+/* DESIGN FOR INPUT SEARCH BAR ~~ THAT APEAR WHEN CLICK SEARCH BUTTON*/
+
+#hidesrc{
+	 width: 700px;
+	 height: 1.8rem;
+	 border: solid 1px #878A8E;
+	 border-radius: 100px;
+	 outline: none;
+	 padding: 0 10px;
+	 font-size: 1.3rem;
+	 display: none;
+}
+
+#check{
+	display: none;
+}
+
+#check:checked ~ #hidesrc{
+	  display: block;
+}
+
+@media (Max-width: 800px){
+	  #hidesrc{
+	  	width: 200px;
+	  }
+}
